@@ -7,7 +7,7 @@ export const products: Product[] = [
     category: "8 tojásos",
     weightG: 250,
     cookTimeMin: 2,
-    imageUrl: "/images/hBP09862-gallery.jpg",
+    imageUrl: "/images/Fbg.png",
     shortDesc: "Klasszikus levesbetét, házias tálaláshoz",
   },
   {
