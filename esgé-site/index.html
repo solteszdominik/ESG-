@@ -1,39 +1,57 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="hu">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Seres eSGé száraztészta</title>
+    <title>Seres tészta</title>
+    <link rel="stylesheet" href="src/style.css" />
   </head>
-
   <body>
-    <header class="nav">
-      <div class="container nav__inner">
-        <a class="logo" href="#top" aria-label="Kezdőlap">
-          <img src="/images/logo.jpg" alt="eSGé manufaktúra kft. logó" />
-        </a>
-        <button
-          class="nav__toggle"
-          type="button"
-          aria-label="Menü"
-          aria-expanded="false"
-        >
-          ☰
-        </button>
-        <nav class="nav__links" aria-label="Fő navigáció">
-          <a href="#products">Termékek</a>
-          <a href="#about">Rólunk</a>
-          <a href="#contact">Kapcsolat</a>
-        </nav>
+    <header>
+      <div class="container">
+        <div class="nav">
+          <a class="brand" href="#top">
+            <strong>SERES tészta</strong><span>manufaktúra</span>
+          </a>
+          <nav class="menu" aria-label="Főmenü">
+            <a href="#hero">Főoldal</a>
+            <a href="#rolunk">Rólunk</a>
+            <a href="#termekek">Termékek</a>
+            <a href="#minoseg">Minőség</a>
+            <a href="#kapcsolat">Kapcsolat</a>
+          </nav>
+        </div>
       </div>
     </header>
 
     <main id="top">
-      <section class="hero">
-        <div class="hero__content container">
-          <h1>Seres eSGé száraztészta</h1>
-          <p>"Ez tényleg tészta"</p>
-          <a class="btn" href="#products">Termékek megtekintése</a>
+      <!-- 1) CREAM -->
+      <section id="hero" class="block b-cream">
+        <div class="container">
+          <div class="split">
+            <div class="panel pad">
+              <span class="kicker"
+                >Derecske • kézi technológia • 8 tojásos</span
+              >
+              <h1>Ez tényleg tészta.</h1>
+              <p class="lead">
+                A derecskei eSGé Száraztészták a hagyományos magyar konyha
+                értékeit őrzik. Több mint két évtizede készülnek kézi leengedési
+                és csomagolási technológiával.
+              </p>
+              <div class="btnrow">
+                <a class="btn primary" href="#termekek">Termékeink</a>
+                <a class="btn" href="#kapcsolat">Elérhetőség</a>
+              </div>
+            </div>
+
+            <div class="panel">
+              <img
+                src="images/Fbg.png"
+                alt="eSGé manufaktúra – termékek bemutatása"
+              />
+            </div>
+          </div>
         </div>
       </section>
 
@@ -42,62 +60,132 @@
         <div id="productsGrid" class="products-grid"></div>
       </section>
 
-      <section id="about" class="section container">
-        <h2>Rólunk</h2>
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum optio
-          cupiditate odit vel similique alias quae ad vero esse aliquam
-          veritatis in, libero nihil, maiores aperiam quibusdam distinctio
-          tempora blanditiis. Autem vel sapiente quaerat in vitae. Unde omnis
-          repellat itaque tenetur dolores quidem tempore quam excepturi
-          recusandae modi porro assumenda, rem nulla quas aliquid debitis,
-          beatae quaerat obcaecati quo nobis aperiam nihil? Totam ex deleniti
-          laborum distinctio placeat obcaecati, similique dolor in aliquam
-          numquam! Voluptates possimus sit nisi impedit, totam facilis
-          repellendus inventore non vel expedita eos, incidunt recusandae ipsam
-          voluptatem quis, error laboriosam ducimus quidem ratione cumque
-          cupiditate placeat.
-        </p>
-        <p></p>
-      </section>
+      <!-- 3) ORANGE (Quality) -->
+      <section id="minoseg" class="block b-orange">
+        <div class="container">
+          <div class="split">
+            <div class="panel">
+              <img
+                src="images/hBP09862-gallery.jpg"
+                alt="Tészta készítése – keverés"
+              />
+            </div>
 
-      <section id="contact" class="section container">
-        <h2>Kapcsolat</h2>
-
-        <div class="contact-grid">
-          <!-- BAL OLDAL: elérhetőségek -->
-          <div class="contact-info">
-            <p>
-              <strong>Email:</strong><br />
-              <a href="mailto:esgeteszta@gmail.com">esgeteszta@gmail.com</a>
-            </p>
-
-            <p>
-              <strong>Telefon:</strong><br />
-              <a href="tel:+36302120060">+36 30 212 0060</a>
-            </p>
-
-            <p>
-              <strong>Telephely:</strong><br />
-              4130 Derecske,<br />
-              Kossuth Lajos út 26/a
-            </p>
-          </div>
-
-          <!-- JOBB OLDAL: térkép -->
-          <div class="contact-map">
-            <iframe
-              title="eSGé Manufaktúra térkép"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d56306.01798931921!2d21.52098700887867!3d47.37520207483984!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x474703db403d0619%3A0x2fe9dda1a74da343!2sDerecske%2C%20Kossuth%20u.%2026%2C%204130!5e0!3m2!1shu!2shu!4v1767779961769!5m2!1shu!2shu"
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
-            ></iframe>
+            <div class="panel pad">
+              <span class="kicker">Minőség</span>
+              <h2>Házias jelleg, kiváló alapanyagok.</h2>
+              <p class="lead">
+                Tésztáink kiemelkedő vízfelvevő képességgel és rugalmas állaggal
+                rendelkeznek, így a legigényesebb főzési igényeket is
+                kielégítik.
+              </p>
+              <ul class="bullets">
+                <li>Magas minőségű hazai alapanyagok</li>
+                <li>Kézi leengedési és csomagolási technológia</li>
+                <li>Rugalmas állag és gazdag ízvilág</li>
+              </ul>
+              <div class="btnrow">
+                <a class="btn" href="#kapcsolat">Kapcsolat</a>
+              </div>
+            </div>
           </div>
         </div>
       </section>
-    </main>
 
-    <footer class="footer container">© Seres</footer>
+      <!-- 4) OFFWHITE (About + Contact) -->
+      <section id="rolunk" class="block b-offwhite">
+        <div class="container">
+          <span class="kicker">Rólunk</span>
+          <h2>Hagyomány Derecskéről</h2>
+
+          <div class="panel pad" style="margin-top: 14px">
+            <p>
+              A derecskei Seres Száraztészták a hagyományos magyar konyha
+              értékeit őrzik, melyeket az immár több mint két évtizede
+              készítenek kézi leengedési és csomagolási technológiával
+              Derecskén.
+            </p>
+            <p>
+              Ezek a házi jellegű tészták Hajdú-Bihar és Szabolcs-Szatmár-Bereg
+              megyében már ismert és közkedvelt termékek, hiszen magas minőségű
+              hazai alapanyagokból készülnek.
+            </p>
+            <p>
+              A Seres tészta kínálatában kézzel készített, házi jellegű tészták
+              található, amelyek minden ételt gazdag ízvilággal és minőségi
+              textúrával tesznek különlegessé. Ha egyszer megkóstolod a Seres
+              Tésztát, te is tudni fogod, hogy
+            </p>
+
+            <div
+              style="
+                margin-top: 14px;
+                padding: 14px 16px;
+                border-left: 4px solid #111;
+                background: rgba(255, 255, 255, 0.6);
+                border-radius: 12px;
+                font-weight: 800;
+              "
+            >
+              „Ez tényleg tészta.”
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="kapcsolat" class="block b-offwhite" style="padding-top: 0">
+        <div class="container">
+          <div class="split">
+            <div class="panel pad">
+              <span class="kicker">Kapcsolat</span>
+              <h2>Elérhetőségek</h2>
+
+              <div style="margin-top: 10px">
+                <div style="opacity: 0.72; font-size: 13px">Email</div>
+                <div style="font-weight: 900; margin-top: 2px">
+                  <a href="mailto:info@valami.hu">info@valami.hu</a>
+                </div>
+
+                <div style="opacity: 0.72; font-size: 13px; margin-top: 12px">
+                  Telefon
+                </div>
+                <div style="font-weight: 900; margin-top: 2px">
+                  <a href="tel:+36302120060">+36 30 212 0060</a>
+                </div>
+
+                <div style="opacity: 0.72; font-size: 13px; margin-top: 12px">
+                  Telephely
+                </div>
+                <div style="font-weight: 900; margin-top: 2px">
+                  4130 Derecske, Kossuth Lajos út 26/a
+                </div>
+              </div>
+            </div>
+
+            <div class="panel pad">
+              <span class="kicker">Üzenet</span>
+              <h2>Írj bátran</h2>
+              <p class="lead">
+                Ha szeretnél viszonteladói információt vagy rendelési
+                lehetőséget, keress minket elérhetőségeinken.
+              </p>
+              <div class="btnrow">
+                <a class="btn primary" href="mailto:esgeteszta@gmail.com"
+                  >Email küldése</a
+                >
+                <a class="btn" href="tel:+36302120060">Telefon</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer>
+        <div class="container">
+          © <span id="y"></span> SERES tészta manufaktúra • Derecske
+        </div>
+      </footer>
+    </main>
 
     <script type="module" src="/src/main.ts"></script>
   </body>

@@ -13,8 +13,8 @@ export function productCard(p: Product): string {
       <!-- FRONT -->
       <div class="card-face card-front">
         <img class="product-card__img" src="${p.imageUrl}" alt="${
-    p.name
-  }" loading="lazy" />
+          p.name
+        }" loading="lazy" />
         <div class="product-card__body">
           <h3 class="product-card__title">${p.name}</h3>
           <p class="product-card__desc">${p.shortDesc}</p>
@@ -28,20 +28,9 @@ export function productCard(p: Product): string {
         </div>
       </div>
 
-      <!-- BACK -->
-      <div class="card-face card-back">
-        <div class="card-back__body">
-          <h4 class="card-back__title">Hol kapható?</h4>
-
-          <ul class="availability">
-            ${availableAtDemo.map((x) => `<li>${x}</li>`).join("")}
-          </ul>
-
-          <div class="card-back__cta">
-            <a class="btn-mini btn-mini--accent" href="#contact">Kapcsolat</a>
-          </div>
-        </div>
-      </div>
+          //  <ul class="availability">
+            //  ${availableAtDemo.map((x) => `<li>${x}</li>`).join("")}
+          //  </ul> 
     </div>
   </article>`;
 }
