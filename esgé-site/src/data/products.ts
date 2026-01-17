@@ -70,7 +70,7 @@ export const products: Product[] = [
     category: "8 tojásos",
     weightG: 250,
     cookTimeMin: 4,
-    imageUrl: "/images/gyufa250.jpg",
+    imageUrl: "/images/gyufa250.JPEG",
     shortDesc: "Gyufa",
   },
   {

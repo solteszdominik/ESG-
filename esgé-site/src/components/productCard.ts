@@ -10,8 +10,7 @@ export function productCard(p: Product): string {
     <span class="product-badge">${p.category}</span>
 
     <div class="card-inner">
-      <!-- FRONT -->
-      <div class="card-face card-front">
+      <div class="card">
         <img class="product-card__img" src="${p.imageUrl}" alt="${
           p.name
         }" loading="lazy" />
@@ -24,13 +23,13 @@ export function productCard(p: Product): string {
             <li>${p.cookTimeMin} perc</li>
           </ul>
 
-          <small class="hint">Vidd fölé a kurzort: Hol kapható?</small>
+          <small class="hint">Hol kapható?</small>
         </div>
       </div>
 
-          //  <ul class="availability">
-            //  ${availableAtDemo.map((x) => `<li>${x}</li>`).join("")}
-          //  </ul> 
+  <ul class="availability">
+  ${availableAtDemo.map((x) => `<li>${x}</li>`).join("")}
+  </ul> 
     </div>
   </article>`;
 }

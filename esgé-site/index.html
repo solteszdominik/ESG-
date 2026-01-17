@@ -57,8 +57,21 @@
 
       <section id="products" class="section container">
         <h2>Termékek</h2>
-        <div id="productsGrid" class="products-grid"></div>
+
+        <div class="products-carousel">
+          <button class="pc-btn pc-prev" type="button">‹</button>
+
+          <div class="pc-viewport">
+            <div id="productsGrid" class="products-grid"></div>
+          </div>
+
+          <button class="pc-btn pc-next" type="button">›</button>
+        </div>
+
+        <div id="productsDots" class="pc-dots"></div>
       </section>
+
+      <div id="productsDots" class="pc-dots" aria-label="Lapozó pontok"></div>
 
       <!-- 3) ORANGE (Quality) -->
       <section id="minoseg" class="block b-orange">

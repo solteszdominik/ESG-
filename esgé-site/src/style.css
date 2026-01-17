@@ -15,7 +15,8 @@
     ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial,
     "Noto Sans", "Helvetica Neue", sans-serif;
 }
-/* smooth scroll  */
+
+/* Smooth scroll */
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 90px;
@@ -24,11 +25,10 @@ section[id] {
   scroll-margin-top: 90px;
 }
 
-/* smooth scroll */
-
 * {
   box-sizing: border-box;
 }
+
 body {
   margin: 0;
   font-family: var(--sans);
@@ -36,15 +36,18 @@ body {
   background: #fff;
   color: #111;
 }
+
 a {
   color: inherit;
   text-decoration: none;
 }
+
 .container {
   width: min(var(--container), calc(100% - 40px));
   margin: 0 auto;
 }
 
+/* Header */
 header {
   position: sticky;
   top: 0;
@@ -53,6 +56,7 @@ header {
   backdrop-filter: blur(10px);
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
+
 .nav {
   display: flex;
   align-items: center;
@@ -60,6 +64,7 @@ header {
   padding: 14px 0;
   gap: 16px;
 }
+
 .brand {
   display: flex;
   align-items: baseline;
@@ -67,14 +72,17 @@ header {
   font-family: var(--serif);
   letter-spacing: 0.2px;
 }
+
 .brand strong {
   font-size: 18px;
 }
+
 .brand span {
   font-family: var(--sans);
   font-size: 13px;
   color: rgba(0, 0, 0, 0.65);
 }
+
 .menu {
   display: flex;
   gap: 16px;
@@ -86,10 +94,12 @@ header {
   color: #111;
 }
 
+/* Sections */
 section.block {
   padding: 44px 0;
   position: relative;
 }
+
 .kicker {
   display: inline-block;
   font-size: 12px;
@@ -100,34 +110,40 @@ section.block {
   padding-left: 10px;
   margin-bottom: 10px;
 }
+
 h1,
 h2,
 h3 {
   margin: 0;
 }
+
 h1 {
   font-family: var(--serif);
   font-size: clamp(32px, 3.4vw, 48px);
   line-height: 1.12;
   margin: 8px 0 12px;
 }
+
 h2 {
   font-family: var(--serif);
   font-size: 28px;
   margin-bottom: 12px;
 }
+
 .lead {
   font-size: 16px;
   max-width: 62ch;
   opacity: 0.92;
 }
 
+/* Buttons */
 .btnrow {
   display: flex;
   gap: 12px;
   flex-wrap: wrap;
   margin-top: 18px;
 }
+
 .btn {
   display: inline-flex;
   align-items: center;
@@ -138,18 +154,21 @@ h2 {
   border: 1px solid rgba(0, 0, 0, 0.14);
   background: rgba(255, 255, 255, 0.7);
 }
+
 .btn.primary {
   background: #111;
   color: #fff;
   border-color: rgba(0, 0, 0, 0.2);
 }
 
+/* Split panels */
 .split {
   display: grid;
   grid-template-columns: 1.05fr 0.95fr;
   gap: 18px;
   align-items: stretch;
 }
+
 .panel {
   border-radius: var(--radius);
   overflow: hidden;
@@ -157,9 +176,13 @@ h2 {
   background: rgba(255, 255, 255, 0.72);
   border: 1px solid rgba(0, 0, 0, 0.1);
 }
+
 .panel.pad {
   padding: 18px;
 }
+
+/* Only panel images (hero/quality), not product images */
+.panel > img,
 .panel img {
   width: 100%;
   height: 100%;
@@ -168,56 +191,24 @@ h2 {
   min-height: 420px;
 }
 
-.grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 16px;
-  margin-top: 10px;
-}
-.product-card {
-  border-radius: var(--radius);
-  overflow: hidden;
-  box-shadow: var(--shadow-soft);
-  background: #dec39b;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-}
-.product-card img {
-  width: 100%;
-  aspect-ratio: 4 / 3; /* vagy 1/1, 16/9, ami tetszik */
-  object-fit: cover;
-  display: block;
-}
-
-.card .pad {
-  padding: 14px 14px 16px;
-}
-.tag {
-  display: inline-block;
-  font-size: 12px;
-  padding: 5px 10px;
-  border-radius: 999px;
-  border: 1px solid rgba(0, 0, 0, 0.14);
-  background: rgba(255, 255, 255, 0.65);
-  margin-bottom: 8px;
-}
-.card h3 {
-  font-size: 18px;
-  margin: 0 0 6px;
-}
+/* Generic meta */
 .meta {
   font-size: 14px;
   opacity: 0.85;
 }
 
+/* Bullets */
 ul.bullets {
   margin: 12px 0 0;
   padding-left: 18px;
   opacity: 0.92;
 }
+
 ul.bullets li {
   margin: 6px 0;
 }
 
+/* Footer */
 footer {
   padding: 26px 0 40px;
   font-size: 13px;
@@ -225,7 +216,7 @@ footer {
   background: #fff;
 }
 
-/* 1) Cream */
+/* Themes */
 .b-cream {
   background:
     radial-gradient(
@@ -241,7 +232,6 @@ footer {
   background: #1a120b;
 }
 
-/* 2) Ribbon */
 .b-ribbon {
   background:
     radial-gradient(
@@ -274,7 +264,6 @@ footer {
   background: rgba(255, 255, 255, 0.06);
 }
 
-/* 3) Orange */
 .b-orange {
   background:
     radial-gradient(
@@ -290,7 +279,6 @@ footer {
   background: #1a120b;
 }
 
-/* 4) Offwhite */
 .b-offwhite {
   background:
     radial-gradient(
@@ -306,25 +294,199 @@ footer {
   background: #161616;
 }
 
-@media (max-width: 980px) {
-  .split {
-    grid-template-columns: 1fr;
-  }
-  .panel img {
-    min-height: 360px;
-  }
-  .grid {
-    grid-template-columns: 1fr 1fr;
-  }
+/* =========================
+   PRODUCTS: CAROUSEL + CARD
+   ========================= */
+
+.products-carousel {
+  margin-top: 14px;
+  display: grid;
+  grid-template-columns: 44px 1fr 44px;
+  gap: 10px;
+  align-items: center;
 }
+
+.pc-viewport {
+  overflow: hidden;
+  border-radius: var(--radius);
+}
+
+.products-carousel .products-grid {
+  display: flex;
+  gap: 16px;
+  margin: 0;
+  padding: 2px;
+  will-change: transform;
+  transition: transform 280ms ease;
+}
+
+.products-carousel .products-grid > * {
+  flex: 0 0 var(--slide-w, 240px);
+}
+
+/* Buttons */
+.pc-btn {
+  height: 44px;
+  width: 44px;
+  border-radius: 999px;
+  border: 1px solid rgba(0, 0, 0, 0.14);
+  background: rgba(255, 255, 255, 0.75);
+  box-shadow: var(--shadow-soft);
+  font-size: 22px;
+  font-weight: 900;
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+  user-select: none;
+}
+.pc-btn:disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+}
+
+/* Dots */
+.pc-dots {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 12px;
+}
+.pc-dot {
+  width: 9px;
+  height: 9px;
+  border-radius: 999px;
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  background: transparent;
+  cursor: pointer;
+  opacity: 0.65;
+}
+.pc-dot[aria-current="true"] {
+  background: rgba(0, 0, 0, 0.85);
+  opacity: 1;
+}
+
+/* Product card */
+.product-card {
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: var(--shadow-soft);
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  background: rgba(255, 255, 255, 0.82);
+  position: relative;
+  transition: transform 160ms ease;
+}
+.product-card:hover {
+  transform: translateY(-2px);
+}
+
+/* Badge */
+.product-badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 2;
+  font-size: 12px;
+  font-weight: 800;
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+/* Make images small + consistent */
+.product-card__img {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  display: block;
+}
+
+/* Body */
+.product-card__body {
+  padding: 12px 14px 12px;
+}
+
+.product-card__title {
+  font-family: var(--serif);
+  font-size: 16px;
+  margin: 2px 0 6px;
+}
+
+.product-card__desc {
+  margin: 0 0 10px;
+  font-size: 13px;
+  opacity: 0.9;
+}
+
+.product-card__meta {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 10px;
+  font-size: 12px;
+  opacity: 0.82;
+}
+
+.hint {
+  display: inline-block;
+  margin-top: 10px;
+  font-size: 12px;
+  opacity: 0.75;
+}
+
+/* Availability chips */
+.availability {
+  list-style: none;
+  margin: 0;
+  padding: 12px 14px 14px;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.availability li {
+  font-size: 12px;
+  font-weight: 700;
+  padding: 6px 10px;
+  border-radius: 999px;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  background: rgba(255, 255, 255, 0.65);
+}
+
+/* Ribbon theme support (if products section sits on ribbon background) */
+.b-ribbon .product-card {
+  background: rgba(255, 255, 255, 0.06);
+  border-color: rgba(255, 255, 255, 0.14);
+  box-shadow: none;
+}
+.b-ribbon .product-badge,
+.b-ribbon .availability li {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.18);
+  color: #fff;
+}
+.b-ribbon .product-card__desc,
+.b-ribbon .product-card__meta,
+.b-ribbon .hint {
+  color: rgba(255, 255, 255, 0.85);
+  opacity: 1;
+}
+.b-ribbon .availability {
+  border-top-color: rgba(255, 255, 255, 0.16);
+}
+
+/* Responsive tweaks */
 @media (max-width: 560px) {
-  .grid {
-    grid-template-columns: 1fr;
+  .products-carousel {
+    grid-template-columns: 38px 1fr 38px;
   }
-  .card img {
-    height: 260px;
+  .pc-btn {
+    width: 38px;
+    height: 38px;
   }
-  .panel img {
-    min-height: 300px;
+  .product-card__img {
+    height: 130px;
   }
 }
