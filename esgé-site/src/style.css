@@ -428,6 +428,15 @@ footer {
   opacity: 0.82;
 }
 
+.motto {
+  margin-top: 14px;
+  padding: 14px 16px;
+  border-left: 4px solid #111;
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 12px;
+  font-weight: 800;
+}
+
 .hint {
   display: inline-block;
   margin-top: 10px;
