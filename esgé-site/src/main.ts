@@ -36,11 +36,11 @@ function initProductsCarousel() {
 
   let perView = getPerView();
   let index = 0; // <-- MOST: SLIDE index (nem oldal)
-  let maxIndex = 0; // <-- meddig lehet tolni
+  let maxIndex = 0;
   let slideW = 320;
 
   function buildDots() {
-    // DOTS: slide-okra (nem oldalakra)
+    // DOTS: slideokra
     dotsWrap.innerHTML = "";
     for (let i = 0; i < products.length; i++) {
       const b = document.createElement("button");
@@ -66,7 +66,7 @@ function initProductsCarousel() {
 
     qsa<HTMLButtonElement>(".pc-dot").forEach((d, i) => {
       d.setAttribute("aria-current", String(i === index));
-      // opcionális: ami már nem érhető el, halványítsuk (ha túl sok dot van)
+      // a nem elérhető dotokat halványítom, ha sok a dot
       d.disabled = i > maxIndex;
       d.style.opacity = i > maxIndex ? "0.25" : "";
       d.style.cursor = i > maxIndex ? "not-allowed" : "";
