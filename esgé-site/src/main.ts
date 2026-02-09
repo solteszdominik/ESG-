@@ -66,7 +66,7 @@ function initProductsCarousel() {
 
     qsa<HTMLButtonElement>(".pc-dot").forEach((d, i) => {
       d.setAttribute("aria-current", String(i === index));
-      // a nem elérhető dotokat halványítom, ha sok a dot
+      // a nem elérhető dotokat halványítom, ha sok
       d.disabled = i > maxIndex;
       d.style.opacity = i > maxIndex ? "0.25" : "";
       d.style.cursor = i > maxIndex ? "not-allowed" : "";

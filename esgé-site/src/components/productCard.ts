@@ -23,11 +23,11 @@ export function productCard(p: Product): string {
             <li>${p.cookTimeMin} perc</li>
           </ul>
 
-          <small class="hint">Hol kapható?</small>
-        </div>
-      </div>
-
-  <ul class="availability">
+          </div>
+          </div>
+          
+          <ul class="availability">
+          <small class="hint">Hol kapható?</small> 
   ${availableAtDemo.map((x) => `<li>${x}</li>`).join("")}
   </ul> 
     </div>
